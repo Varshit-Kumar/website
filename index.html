@@ -6,12 +6,17 @@
     <title>Varshit Kumar</title>
 
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, sans-serif;
-        }
+
+    html{
+        scroll-behavior:smooth;
+    }
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, sans-serif;
+    }
 
         body{
             background:#f4f4f4;
@@ -25,6 +30,12 @@
             display:flex;
             justify-content:space-between;
             align-items:center;
+
+            position:fixed;
+            width:100%;
+            top:0;
+            left:0;
+            z-index:1000;
         }
 
         nav a{
@@ -32,16 +43,21 @@
             text-decoration:none;
             margin-left:20px;
             font-weight:bold;
+            transition:0.3s;
+        }
+        nav a:hover{
+            color:#00bfff;
         }
 
         .hero{
             height:90vh;
+            padding-top:80px;
             display:flex;
             flex-direction:column;
             justify-content:center;
             align-items:center;
             text-align:center;
-            background:black;
+            background:linear-gradient(135deg,#000,#1a1a1a,#2d2d2d);
             color:white;
         }
 
@@ -56,12 +72,17 @@
         }
 
         .btn{
+            transition: 0.3s;    
             background:white;
             color:#007BFF;
             padding:12px 30px;
             text-decoration:none;
             border-radius:30px;
             font-weight:bold;
+        }
+        .btn:hover{
+            background:white;
+            color:#00bfff;
         }
 
         .about{
@@ -83,8 +104,12 @@
             padding:25px;
             border-radius:10px;
             box-shadow:0 0 10px rgba(0,0,0,0.1);
+            transition:0.3s;
         }
-
+        .card:hover{
+            transform:translateY(-10px);
+            box-shadow:0 20px 40px rgba(0,0,0,0.2);  
+        }
         footer{
             background:#222;
             color:white;
@@ -92,6 +117,26 @@
             padding:20px;
             margin-top:40px;
         }
+    
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            padding:15px;
+        }
+        nav{
+            margin-top:10px;
+        }
+        .hero h1{
+            font-size:40px;
+        }
+        .hero p{
+            width:90%;
+        }
+        .cards{
+            flex-direction:column;
+            align-items:center;
+        }
+    }
     </style>
 </head>
 
@@ -102,7 +147,7 @@
 
     <nav>
         <a href="#">Home</a>
-        <a href="#">About</a>
+        <a href="#about">About</a>
         <a href="#">Services</a>
         <a href="https://www.linkedin.com/in/varshitkumar-/" target="_blank">Contact</a>
     </nav>
@@ -111,10 +156,10 @@
 <section class="hero">
     <h1>Welcome!</h1>
     <p>I'm Varshit Kumar, a web developer passionate about creating beautiful and functional websites.</p>
-    <a href="#" class="btn">Get Started</a>
+    <a href="#about" class="btn">Get Started</a>
 </section>
 
-<section class="about">
+<section id="about" class="about">
     <h2>Our Services</h2>
 
     <div class="cards">
