@@ -1,0 +1,15 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;scroll-behavior:smooth}
+body{background:#0b1120;color:#fff}
+header{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;padding:20px 8%;background:#101827ee;backdrop-filter:blur(10px)}
+nav a{color:#fff;text-decoration:none;margin-left:25px}
+nav a:hover,.logo span,h2{color:#3b82f6}
+.hero{min-height:100vh;padding:120px 8%;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(135deg,#0b1120,#111827)}
+.left img{width:340px;border-radius:50%;border:5px solid #3b82f6}
+.right{max-width:600px}.right h1{font-size:60px}.btn{display:inline-block;margin-top:20px;background:#2563eb;color:#fff;padding:14px 30px;border-radius:30px;text-decoration:none}
+section{padding:90px 8%}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:30px}
+.card{background:#1e293b;padding:25px;border-radius:16px;transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.skill{margin:20px 0}.bar{height:12px;background:#23324d;border-radius:20px;overflow:hidden}.bar div{height:100%;background:#3b82f6}
+footer{text-align:center;padding:30px;background:#111827}
+@media(max-width:900px){header{flex-direction:column}.hero{flex-direction:column;text-align:center}.left img{width:250px;margin-bottom:30px}.right h1{font-size:42px}}
