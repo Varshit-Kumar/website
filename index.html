@@ -3,9 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varshit</title>
+    <title>My Website</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        header{
+            background:#007BFF;
+            color:white;
+            padding:20px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+            font-weight:bold;
+        }
+
+        .hero{
+            height:90vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            background:linear-gradient(135deg,#007BFF,#00C6FF);
+            color:white;
+        }
+
+        .hero h1{
+            font-size:55px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:20px;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            background:white;
+            color:#007BFF;
+            padding:12px 30px;
+            text-decoration:none;
+            border-radius:30px;
+            font-weight:bold;
+        }
+
+        .about{
+            padding:60px 10%;
+            text-align:center;
+        }
+
+        .cards{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+            margin-top:30px;
+        }
+
+        .card{
+            background:white;
+            width:300px;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+<header>
+    <h2>My Website</h2>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>Create amazing websites with HTML & CSS.</p>
+    <a href="#" class="btn">Get Started</a>
+</section>
+
+<section class="about">
+    <h2>Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Web Design</h3>
+            <p>Beautiful and responsive website designs for your business.</p>
+        </div>
+
+        <div class="card">
+            <h3>Development</h3>
+            <p>Fast and secure websites built using modern technologies.</p>
+        </div>
+
+        <div class="card">
+            <h3>Support</h3>
+            <p>24/7 customer support and website maintenance.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 My Website | All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
